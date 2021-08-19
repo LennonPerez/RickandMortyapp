@@ -1,0 +1,28 @@
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  height: 50vh;
+  h1 {
+    color: #353535;
+  }
+  p {
+    margin: 1rem 0;
+  }
+  button {
+    font-weight: 500;
+    background-color: #11555f;
+    margin-right: 1rem;
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    &:hover {
+      background-color: #27b5ca;
+    }
+  }
+}

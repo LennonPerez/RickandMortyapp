@@ -1,0 +1,50 @@
+nav {
+  height: 5rem;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid rgb(175, 174, 174);
+  position: relative;
+  .desktop-nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      width: 80%;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+      button {
+        text-transform: capitalize;
+        cursor: pointer;
+        border: none;
+        height: 100%;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        position: relative;
+        &::after {
+          position: absolute;
+          bottom: 0;
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          transition: width 0.3s ease;
+        }
+        &:hover {
+          color: rgb(35, 245, 35);
+        }
+      }
+      .selectedbutton {
+        &::after {
+          width: 100%;
+          background-color: rgb(35, 245, 35);
+        }
+      }
+    }
+  }
+}

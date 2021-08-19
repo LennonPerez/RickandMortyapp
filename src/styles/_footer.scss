@@ -1,0 +1,21 @@
+footer {
+  height: 10rem;
+  background-image: url(../assets/Background.jpg);
+  background-position: top center;
+  background-size: 300%;
+  margin-top: 4rem;
+  position: relative;
+  .logo {
+    height: 5rem;
+    width: 15rem;
+    background-image: url(../assets/Logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
